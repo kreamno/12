@@ -12,7 +12,8 @@ int main(int argc, char *argv[]) {
 		i++;
 	}
 	
-	printf("문자열\"%s\"의 길이: %i", src, i);
+	printf("문자열\"%s\"의 길이: %i\n", src, i);
+	printf("%i", strlen(src));
 	
 	return 0;
 }
