@@ -6,16 +6,13 @@
 int main(int argc, char *argv[]) {
 	
 	char src[100] = "Programming course";
-	char dst[100];
-	int i=0;
+	int i=0;	//문자 수를 세는 변수 
 	
 	while(src[i] != '\0'){
-		dst[i] = src[i];
 		i++;
 	}
-	dst[i] = '\0';
 	
-	printf("dst: %s\n", dst);
+	printf("문자열\"%s\"의 길이: %i", src, i);
 	
 	return 0;
 }
