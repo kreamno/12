@@ -5,15 +5,20 @@
 
 int main(int argc, char *argv[]) {
 	
-	char src[100] = "Programming course";
-	int i=0;	//문자 수를 세는 변수 
+	FILE *fp;
+	char input[100];
+	int i;
+
+	fp = fopen("sample.txt","w");
 	
-	while(src[i] != '\0'){
-		i++;
+	for(i=0;i<3;i++)
+	{
+		printf("input a word: ");
+		scanf("%s", input);
+		fprintf(fp, "%s\n", input);
 	}
 	
-	printf("문자열\"%s\"의 길이: %i\n", src, i);
-	printf("%i", strlen(src));
-	
+	fclose(fp);
+
 	return 0;
 }
